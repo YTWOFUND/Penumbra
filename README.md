@@ -69,7 +69,7 @@ cometbft start --home ~/.penumbra/testnet_data/node0/cometbft
 ### Install and start pcli.
 ```
 git clone https://github.com/penumbra-zone/penumbra
-cd penumbra && git fetch && git checkout v0.68.2 && cargo update
+cd penumbra && git fetch && git checkout v0.71.0 && cargo update
 cargo build --release --bin pcli
 cargo build --release --bin pd
 pcli --version
@@ -161,7 +161,7 @@ cargo run --release --bin pcli -- query validator list -i
 ```
 rm -rf penumbra-zone
 git clone https://github.com/penumbra-zone/penumbra
-cd penumbra && git fetch && git checkout v0.68.2 && cargo update
+cd penumbra && git fetch && git checkout v0.71.0 && cargo update
 cargo build --release --bin pcli
 cargo build --release --bin pd
 pcli --version
@@ -172,5 +172,5 @@ cd penumbra
 cargo run --bin pd --release -- start --home ~/.penumbra/testnet_data/node0/pd
 
 Current network:penumbra-zone
-Current version:v0.68.2
+Current version:v0.71.0
 ```
