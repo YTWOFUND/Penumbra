@@ -7,7 +7,7 @@ Penumbra Node Installation Instructions </br>
 CPU: 4 Core </br>
 RAM: 8 Gb </br>
 SSD: 200 Gb </br>
-OS: Ubuntu 20.04 LTS </br>
+OS: Ubuntu 22.04 LTS </br>
 
 ### Network configurations: </br>
 Outbound - allow all traffic </br>
