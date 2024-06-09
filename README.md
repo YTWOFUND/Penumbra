@@ -55,7 +55,7 @@ go version
 cd /root
 git clone https://github.com/cometbft/cometbft.git
 cd cometbft
-git checkout v0.37.2
+git checkout v0.37.5
 go mod tidy
 go build -o cometbft ./cmd/cometbft
 mv cometbft /root/cometbft/
@@ -69,7 +69,7 @@ cometbft start --home ~/.penumbra/testnet_data/node0/cometbft
 ### Install and start pcli.
 ```
 git clone https://github.com/penumbra-zone/penumbra
-cd penumbra && git fetch && git checkout v0.75.0 && cargo update
+cd penumbra && git fetch && git checkout v0.77.2 && cargo update
 cargo build --release --bin pcli
 cargo build --release --bin pd
 pcli --version
@@ -161,7 +161,7 @@ cargo run --release --bin pcli -- query validator list -i
 ```
 rm -rf penumbra-zone
 git clone https://github.com/penumbra-zone/penumbra
-cd penumbra && git fetch && git checkout v0.75.0 && cargo update
+cd penumbra && git fetch && git checkout v0.77.2 && cargo update
 cargo build --release --bin pcli
 cargo build --release --bin pd
 pcli --version
@@ -172,5 +172,5 @@ cd penumbra
 cargo run --bin pd --release -- start --home ~/.penumbra/testnet_data/node0/pd
 
 Current network:penumbra-zone
-Current version:v0.71.0
+Current version:v0.77.2
 ```
